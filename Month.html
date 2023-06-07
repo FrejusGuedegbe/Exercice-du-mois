@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        '1- Créez un objet `personne` avec les propriétés suivantes'
+        const Personne = {
+        nom: "Jean",
+        age: 30,
+        adresse: "123 Rue Princ",
+        profession : "Gamer"
+        };
+
+        '2- Ajoutez une méthode `saluer` à l\'objet `personne` qui affiche dans la console le message "Bonjour ! Je m\'appelle Jean.'
+        function saluer(){
+            console.log("Bonjour, je m'appelle " + Personne.nom);
+        }
+        // saluer();
+
+        '3- Modifiez la valeur de la propriété `age` de l\'objet `personne` pour la faire passer à 35.'
+        // function modif(age){
+        //     Personne.age = age ;
+        // }
+        // modif(35);
+        // console.log("l'age actuelle est " + Personne.age);
+        Personne.age = 35 ;
+
+        '5-  Affichez dans la console le nom complet de la personne en utilisant les propriétés `nom` et `adresse`'
+        console.log(Personne.nom + ' ' + Personne.adresse);
+
+
+        'Exo 2'
+
+        '1- Créez un tableau `fruits` contenant les éléments suivants : "pomme", "banane", "orange"'
+            const fruits = ["pomme", "banane", "orange"];
+
+        '2- Affichez dans la console le premier élément du tableau.'
+            console.log(fruits[0]); 
+
+        '3- Ajoutez un nouvel élément "kiwi" à la fin du tableau.'
+            fruits.push("kiwi");
+
+        '4- Supprimez le deuxième élément du tableau.'
+            fruits.splice(1, 1);
+            //avec 1 index numéro deux et 1 le nombre d'éléments à supprimer
+
+        '5- Parcourez le tableau à l\'aide d\'une boucle et affichez chaque élément dans la console.'
+            for (let i = 0; i < fruits.length; i++) {
+                console.log(fruits[i]);
+            }
+
+
+        'Exo 3'
+
+        '1-Créez une fonction calculerSomme qui prend deux paramètres a et b, et retourne la somme des deux nombres.'
+            function calculerSomme(a, b) {
+                return a + b;
+            }
+
+        '2- Testez la fonction en l\'appelant avec différents arguments et affichez le résultat dans la console.'
+            const resultat = calculerSomme(3, 4);
+            console.log(resultat);
+
+        '3- Créez une fonction afficherMessage qui prend un paramètre message et affiche le message dans une boîte d\'alerte.'
+            function afficherMessage(message) {
+                alert(message);
+            }
+
+        '4- Appelez la fonction afficherMessage avec un message de votre choix.'
+            afficherMessage("Yo, how are you brocow !");
+   
+        '5- Créez une fonction genererNombreAleatoire qui retourne un nombre entier aléatoire entre 1 et 100.'
+            function generate(){
+                let a = Math.random(0, 100);
+                return a;
+            }
+
+        '6- Appelez la fonction genererNombreAleatoire et affichez le résultat dans la console.'
+            generate();
+            console.log(generate());
+    </script>
+</body>
+</html>
